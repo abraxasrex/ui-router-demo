@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head ng-app="coolApp">
+<head ng-app="CuteApp">
   <title>mystery topic</title>
+  <base href="/" />
 </head>
 <body>
-  <h1> hi </h1>
+  <h1> Cute Animals </h1>
+  <a ui-sref="Bunnies">Bunnies</a>  <a ui-sref="Ducks">Ducks</a>
+  
+  <ui-view></ui-view>
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers.js"></script>
 </body>
 </html>

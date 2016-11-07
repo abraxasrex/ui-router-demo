@@ -14,10 +14,31 @@ Angular ts project setup:
 
 # routing  
 0. we need a server for state routing to work properly. let's use lite-server.it's lite.  
-- set up a bs-config.json
+- set up a bs-config.json:  
+
+```{
+    "port": 8000,
+  "server": {
+    "baseDir": "./ngApp"
+  }
+}
+```
+
 1. setup: base href, ui-sref and ui-view directives
+1.5. angular config for ui-router:  
+
+```
+namespace CuteApp {
+  angular.module('CuteApp', ['ui.router']).config(
+    ($stateProvider: ng.ui.IStateProvider,
+      $locationProvider: ng.ILocationProvider,
+      $urlRouterProvider: ng.ui.IUrlRouterProvider) => {});
+
+  }
+  ```  
+  
 2. setup: ui-router dependencies, $stateprovider.state() method,
-   $urlRouterPRovider.otherwise(), $locationProvider.html5mode(true)
+   $urlRouterProvider.otherwise(), $locationProvider.html5mode(true)
 3. create a state: a. url, b. templateurl, c. controller, d., controllerAs
 4. create separate controllers file
 5. create html templates
