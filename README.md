@@ -13,6 +13,8 @@ Angular ts project setup:
 
 
 # routing  
+0. we need a server for state routing to work properly. let's use lite-server.it's lite.  
+- set up a bs-config.json
 1. setup: base href, ui-sref and ui-view directives
 2. setup: ui-router dependencies, $stateprovider.state() method,
    $urlRouterPRovider.otherwise(), $locationProvider.html5mode(true)

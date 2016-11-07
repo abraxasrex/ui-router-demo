@@ -1,0 +1,16 @@
+{
+  "name": "ui-router-demo",
+  "version": "1.0.0",
+  "description": "Angular ts project setup:   1. Bower install front end dependencies (angular, ui-router, 3rd party libs, etc.  ** 2. Create .ts file then use atom palette to get predefined tsconfig.json 3. Install typings for front end dependencies, i.e. 4. typings install dt~angular --global --save 5. Npm install back end packages if necessary **",
+  "main": "index.js",
+  "dependencies": {
+    "lite-server": "^2.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "lite-server"
+  },
+  "author": "",
+  "license": "ISC"
+}
